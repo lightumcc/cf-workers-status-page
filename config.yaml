@@ -24,6 +24,18 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
+  - id: 
+    name: Createch Content Delivery Network
+    url: 'https://cdn.createchstudio.com'
+    method: GET
+    expectStatus: 404
+
+  - id: 
+    name: Createch MC Mod Integration
+    url: 'https://mci.createchstudio.com'
+    method: GET
+    expectStatus: 404
+
   - id: dns # unique identifier
     name: Createch Safe DNS
     description: 'Safe customizable DNS for everyone.' # default=empty
