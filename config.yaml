@@ -29,12 +29,14 @@ monitors:
     url: 'https://cdn.createchstudio.com'
     method: GET
     expectStatus: 404
+    linkable: false # allows the title to be a link, default=true
 
   - id: 
     name: Createch MC Mod Integration
     url: 'https://mci.createchstudio.com'
     method: GET
     expectStatus: 404
+    linkable: false # allows the title to be a link, default=true
 
   - id: dns # unique identifier
     name: Createch Safe DNS
