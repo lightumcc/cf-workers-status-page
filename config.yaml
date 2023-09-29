@@ -24,6 +24,15 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
+  - id: dns # unique identifier
+    name: Createch Safe Dns
+    description: 'Safe customizable DNS for everyone.' # default=empty
+    url: 'https://dns.createchstudio.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
   - id: support
     name: Createch Support
     description: 'Your job is to create, our job is to help you.'
