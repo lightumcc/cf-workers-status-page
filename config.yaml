@@ -15,25 +15,58 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: env-share # unique identifier
+    name: Createch Env Share
+    description: 'Share your environment key in a secure way.' # default=empty
+    url: 'https://envshare.createchstudio.com/share' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: support
+    name: Createch Support
+    description: 'Your job is to create, our job is to help you.'
+    url: 'https://support.createchstudio.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: shortlink
+    name: Createch Short Link
+    description: 'Save your time, save your link.'
+    url: 'https://atcrea.tech'
+    method: GET
+    expectStatus: 404
+
+  - id: share-drive
+    name: Createch Share Drive
+    description: 'Ultra fast!'
+    url: 'https://drive.createchstudio.com'
     method: GET
     expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: memos
+    name: Createch Memos
+    description: 'Your memos, your memories.'
+    url: 'https://memos.createchstudio.com'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: bio-creator
+    name: Createch Bio Creator
+    description: 'Create your bio in a few seconds.'
+    url: 'https://onelink.createchstudio.com'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: blc
+    name: Bilibili Live Chat
+    description: 'Chat with your friends on Bilibili Live'
+    url: 'https://blc.createchstudio.com'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
