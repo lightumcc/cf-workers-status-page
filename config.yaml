@@ -61,6 +61,7 @@ monitors:
     url: 'https://atcrea.tech'
     method: GET
     expectStatus: 404
+    linkable: false # allows the title to be a link, default=true
 
   - id: share-drive
     name: Createch Share Drive
