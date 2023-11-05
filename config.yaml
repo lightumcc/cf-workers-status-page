@@ -102,3 +102,11 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
+
+  - id: analytics
+    name: Createch Analytics
+    description: 'Analytics your website.'
+    url: 'https://analytics.createchstudio.com'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
