@@ -71,14 +71,6 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: memos
-    name: Createch Memos
-    description: 'Your memos, your memories.'
-    url: 'https://memos.createchstudio.com'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-
   - id: bio-creator
     name: Createch Bio Creator
     description: 'Create your bio in a few seconds.'
@@ -94,19 +86,3 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
-
-  - id: tools
-    name: Createch IT Tools
-    description: 'Tools for IT.'
-    url: 'https://tools.createchstudio.com'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-
-  - id: analytics
-    name: Createch Analytics
-    description: 'Analytics your website.'
-    url: 'https://analytics.createchstudio.com'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
