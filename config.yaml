@@ -15,6 +15,15 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: blog # unique identifier
+    name: Createch Blog
+    description: 'The official blog of CreatechStudio.' # default=empty
+    url: 'https://createchstudio.com' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
   - id: env-share # unique identifier
     name: Createch Env Share
     description: 'Share your environment key in a secure way.' # default=empty
